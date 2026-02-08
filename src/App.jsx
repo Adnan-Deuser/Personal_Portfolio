@@ -1,10 +1,11 @@
 import { NavBar } from "@/layout/NavBar"
 import { Hero } from "@/section/Hero"
 import { Project } from "./section/Project"
-import { Testemonail } from "./section/Testemonial"
+import { Testimonial } from "./section/Testimonial"
 import { Contact } from "./section/Contact"
 import { Experience } from "./section/Experience"
 import { About } from "./section/About"
+import { Footer } from "./layout/Footer"
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
         <About />
         <Project />
         <Experience />
-        <Testemonail />
+        <Testimonial />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }

@@ -39,7 +39,7 @@ export const NavBar =()=>{
                 </div>
             </div>
             <div className="hidden md:block">
-                <Button size="sm">Contact Me</Button>
+                <a href="#contact"><Button size="sm">Contact Me</Button></a>
             </div>
 
 
@@ -53,11 +53,15 @@ export const NavBar =()=>{
             <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                 {navLinks.map((unlink, ind)=>(
                     <a href={unlink.href} key={ind}
+                    onClick={() => setIsMobileMenu(false)}
                     className="text-lg text-muted-foreground hover:text-foreground py-2">
                         {unlink.label}
                     </a>
                     ))}
-                <Button className="cursor-pointer">Contact Me</Button>
+                <a href="#contact">
+                <Button className="cursor-pointer"
+                onClick={() => setIsMobileMenu(false)}>Contact Me</Button>
+                </a>
             </div>
         </div>
         )}

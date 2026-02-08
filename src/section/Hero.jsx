@@ -76,13 +76,18 @@ export const Hero =() => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              <a href="#contact">
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download Resume
-              </AnimatedBorderButton>
+              </a>
+              <AnimatedBorderButton
+              href="/resume.pdf"
+              download="Yuki_Resume.pdf"
+>
+            <Download className="w-5 h-5" />
+              Download Resume
+            </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}
@@ -131,9 +136,9 @@ export const Hero =() => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">Web Develop</div>
+                  <div className="text-2xl font-bold text-primary">AI Developer</div>
                   <div className="text-xs text-amber-300">
-                    a Warm fuzzy feeling
+                    Full Stack
                   </div>
                 </div>
               </div>
@@ -141,45 +146,54 @@ export const Hero =() => {
           </div>
         </div>
 
-        {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-sm text-muted-foreground mb-6 text-center">
-            Technologies I am currently learning with
-          </p>
-          <div className="relative overflow-hidden">
-            <div
-              className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
-            />
-            <div
-              className="absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10"
-            />
-            <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-            </div>
+{/* Skills Section */}
+<div className="mt-20 animate-fade-in animation-delay-600">
+  <p className="text-sm font-bold text-muted-foreground mb-4 text-center">
+    Technologies I am learning :
+  </p>
+  <div className="relative overflow-hidden">
+    <div
+      className="absolute left-0 top-0 bottom-0 w-32
+      bg-gradient-to-r from-background to-transparent z-10"
+    />
+    <div
+      className="absolute right-0 top-0 bottom-0 w-32
+      bg-gradient-to-l from-background to-transparent z-10"
+    />
+
+    <div className="flex animate-marquee">
+      {[...skills, ...skills].map((skill, idx) => (
+        <div key={idx} className="flex-shrink-0 px-4 py-4">
+          
+          {/* Skill Card */}
+          <div className="min-w-[140px] px-6 py-4 text-center rounded-2xl
+                          bg-muted/40 backdrop-blur-sm border border-border
+                          shadow-sm hover:shadow-md hover:-translate-y-1
+                          transition-all duration-300">
+            <span className="text-lg font-semibold text-muted-foreground/70 hover:text-primary transition-colors">
+              {skill}
+            </span>
           </div>
+
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
+</div>
 
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 
-      animate-fade-in animation-delay-800"
-      >
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
-        >
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
-          <ChevronDown className="w-6 h-6 animate-bounce" />
-        </a>
-      </div>
+<div
+  className="absolute bottom-8 left-1/2 -translate-x-1/2 
+  animate-fade-in animation-delay-800"
+>
+  <a
+    href="#about"
+    className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+  >
+    <span className="text-xs uppercase tracking-wider">Scroll</span>
+    <ChevronDown className="w-6 h-6 animate-bounce" />
+  </a>
+</div>
 
-    </section>
+</section>
 }
