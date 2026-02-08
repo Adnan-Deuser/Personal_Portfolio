@@ -6,7 +6,7 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
-import { Button } from "@/components/Button";
+import { Button } from "@/Components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -75,7 +75,7 @@ export const Contact = () => {
         message: "Message sent successfully! I'll get back to you soon.",
       });
       setFormData({ name: "", email: "", message: "" });
-    } catch (err) {
+    } catch (error) {
       console.error("EmailJS error:", error);
       setSubmitStatus({
         type: "error",
