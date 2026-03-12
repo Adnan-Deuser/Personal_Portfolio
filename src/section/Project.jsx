@@ -25,7 +25,7 @@ const projects = [
       "A full-featured movie site which displays all the latest movies with posters and release dates, it has an inbuilt favourites tab",
     image: "/projects/project2.png",
     tags: ["React.js", "movieDB API", "TailwindCSS", "Javascript"],
-    link: "https://personal-portfolio-two-dusky-72.vercel.app/",
+    link: "https://react-movie-site-kappa.vercel.app/",
     github: "https://github.com/Adnan-Deuser/React_Movie_Site",
   },
   {
