@@ -1,12 +1,21 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/Components/AnimatedBorderButton";
 const projects = [
+    {
+    title: "Restaurant Management system",
+    description:
+      "A responsive MERN-based restaurant management system that allows seamless table tracking, order management, receipt generation, and secure user authentication, designed for efficiency and real-time operation.",
+    image: "/projects/project3.png",
+    tags: ["React", "Tailwind", "Express.JS", "Axios", "MongoDB","Tanstack Query","Vercel"],
+    link: "https://restaurantfrontend-gamma.vercel.app/",
+    github: "https://github.com/Adnan-Deuser/Restaurant_Management_System__mern",
+  },
   {
     title: "ThinkBoard",
     description:
       "ThinkBoard is a full-stack MERN note management application that enables users to create, edit, delete, and organize personal notes through a responsive interface, backed by a RESTful API and secure database storage.",
     image: "/projects/project1.png",
-    tags: ["React", "MongoDB", "Express.js","Node.js","Redis"],
+    tags: ["React", "MongoDB", "Express.js", "Node.js", "Redis"],
     link: "https://thinkboard-mern-n24h.onrender.com/",
     github: "https://github.com/Adnan-Deuser/ThinkBoard_mern",
   },
@@ -15,18 +24,9 @@ const projects = [
     description:
       "A full-featured movie site which displays all the latest movies with posters and release dates, it has an inbuilt favourites tab",
     image: "/projects/project2.png",
-    tags: ["React.js", "movieDB API", "TailwindCSS","Javascript"],
-    link: "#",
+    tags: ["React.js", "movieDB API", "TailwindCSS", "Javascript"],
+    link: "https://react-movie-site-final.vercel.app/",
     github: "https://github.com/Adnan-Deuser/React_Movie_Site",
-  },
-  {
-    title: "Hospital Management System",
-    description:
-      "A Hospital Management System built with React is a web application that helps hospitals manage their daily operations digitally and efficiently.Staff can handle patient registration, appointment scheduling, doctor management, billing, and medical records in real time.",
-    image: "/projects/project3.jpeg",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
   },
   {
     title: "E-Commerce Site",
@@ -88,12 +88,16 @@ export const Project = () => {
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
                     href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <Github className="w-5 h-5" />
@@ -134,16 +138,16 @@ export const Project = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-        <a
-          href="https://github.com/Adnan-Deuser?tab=repositories"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        <AnimatedBorderButton>
-        View All Projects
-        <ArrowUpRight className="w-5 h-5" />
-      </AnimatedBorderButton>
-        </a>
+          <a
+            href="https://github.com/Adnan-Deuser?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AnimatedBorderButton>
+              View All Projects
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>
