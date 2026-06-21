@@ -16,13 +16,13 @@ const highlights = [
   {
     icon: Users,
     title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    description: "Working closely with teams to bring ideas and innovation to life.",
   },
   {
     icon: Lightbulb,
     title: "Innovation",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Staying up-to-date with the latest technologies and best practices.",
   },
 ]
 

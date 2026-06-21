@@ -2,7 +2,7 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/Components/AnimatedBorderButton";
 const projects = [
     {
-    title: "Restaurant Management system",
+    title: "Restaurant Management System",
     description:
       "A responsive MERN-based restaurant management system that allows seamless table tracking, order management, receipt generation, and secure user authentication, designed for efficiency and real-time operation.",
     image: "/projects/project3.png",
@@ -24,7 +24,7 @@ const projects = [
     description:
       "A full-featured movie site which displays all the latest movies with posters and release dates, it has an inbuilt favourites tab",
     image: "/projects/project2.png",
-    tags: ["React.js", "movieDB API", "TailwindCSS", "Javascript"],
+    tags: ["React.js", "movieDB API", "TailwindCSS", "Javascript","VS Code"],
     link: "https://react-movie-site-kappa.vercel.app/",
     github: "https://github.com/Adnan-Deuser/React_Movie_Site",
   },
